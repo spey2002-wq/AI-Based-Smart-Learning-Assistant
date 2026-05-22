@@ -12,9 +12,8 @@ const User = require('./models/User');
 
 const PORT = process.env.PORT || 5000;
 const MODEL = 'gemini-2.5-flash';
-const MONGODB_URI =
-  process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/learning_assistant';
-const JWT_SECRET = process.env.JWT_SECRET || 'change-this-secret-in-production';
+const MONGODB_URI = process.env.MONGODB_URI;
+const JWT_SECRET = process.env.JWT_SECRET;
 const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN || '7d';
 const BCRYPT_ROUNDS = 12;
 
