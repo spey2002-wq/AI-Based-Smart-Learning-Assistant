@@ -1,0 +1,25 @@
+{
+  "name": "ai-learning-assistant-api",
+  "version": "1.0.0",
+  "description": "Express API with JWT auth and Gemini-powered learning modes",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@google/genai": "^2.5.0",
+    "axios": "^1.16.1",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.24.0"
+  }
+}
