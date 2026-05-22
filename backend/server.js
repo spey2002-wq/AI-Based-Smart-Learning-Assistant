@@ -13,6 +13,10 @@ const User = require('./models/User');
 const PORT = process.env.PORT || 5000;
 const MODEL = 'gemini-2.5-flash';
 const MONGODB_URI = process.env.MONGODB_URI;
+if (!MONGODB_URI) {
+  console.error("CRITICAL ERROR: MONGODB_URI is not defined in environment variables!"):
+  process.exit(1);
+}
 const JWT_SECRET = process.env.JWT_SECRET;
 const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN || '7d';
 const BCRYPT_ROUNDS = 12;
